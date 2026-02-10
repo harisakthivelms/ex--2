@@ -61,9 +61,9 @@ L1:      DEC DX
          JNZ L1
 
          INC DI               ; Go to next memory location
-         LOOP 1008           ; Repeat until all data is sent
+         LOOP DOWN1           ; Repeat until all data is sent
 
-         JMP 1000           ; Continuous rotation
+         JMP START           ; Continuous rotation
 
          HLT                  ; Stop
 
